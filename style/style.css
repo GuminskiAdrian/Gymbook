@@ -30,11 +30,20 @@ body {
 }
 
 .container,
-.container .workoutType {
+.container .workoutType,
+.container .workout .workoutCols {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
+}
+
+.container,
+.container input,
+.container select {
+    font-size: 1.2rem;
+    color: var(--maingreen);
 }
 
 .container {
@@ -53,14 +62,35 @@ body {
 }
 
 .container .workoutType {
-    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 0.5rem;
 }
 
-.container .col {
+.container .workout {
+    width: 65%;
+}
+
+.container .workout .workoutCols,
+.container .workout .workoutCols .col {
+    width: 100%;
+}
+
+.container .workout .workoutCols .col {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.container .workout .workoutCols .col .name {
+    width: 40%;
+}
+
+.container .workout .workoutCols .col .series,
+.container .workout .workoutCols .col .reps,
+.container .workout .workoutCols .col .weight {
+    width: 15%;
 }
