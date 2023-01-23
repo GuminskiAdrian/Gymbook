@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/style.css">
-    <script src="scripts/script.js" defer></script>
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/reset.css" />
+        <link rel="stylesheet" href="style/style.css" />
+        <script src="scripts/script.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="title">
+            <h1>GymBook</h1>
+        </nav>
+        <div class="container">
+            <div class="workoutType">
+                <h4>Typ treningu</h4>
+                <div>
+                    <label for="workout-type"></label>
+                    <select id="workout-type">
+                        <option value="chest">Chest</option>
+                        <option value="legs">Legs</option>
+                        <option value="back">Back</option>
+                        <option value="push">Push</option>
+                        <option value="pull">Pull</option>
+                        <option value="arms">Arms</option>
+                        <option value="cardio">Cardio</option>
+                    </select>
+                    <input type="date" />
+                </div>
+            </div>
+            <div class="workout">
+                <div class="titlesOfCols">
+                    <div class="col1">
+                        <p>Nazwa ćwiczenia</p>
+                        <p>Ilość serii</p>
+                        <p>Ilość powtórzeń</p>
+                        <p>obciążenie</p>
+                    </div>
+                    <div class="col2">
+                        <input type="text" class="name" id="name" />
+                        <input type="number" class="series" id="series" />
+                        <input type="number" class="reps" id="reps" />
+                        <input type="number" class="weight" id="weight" />
+                    </div>
+                    <div class="col3">
+                        <input type="text" class="name" id="name" />
+                        <input type="number" class="series" id="series" />
+                        <input type="number" class="reps" id="reps" />
+                        <input type="number" class="weight" id="weight" />
+                    </div>
+                    <div class="col4">
+                        <input type="text" class="name" id="name" />
+                        <input type="number" class="series" id="series" />
+                        <input type="number" class="reps" id="reps" />
+                        <input type="number" class="weight" id="weight" />
+                    </div>
+                    <div class="col5">
+                        <input type="text" class="name" id="name" />
+                        <input type="number" class="series" id="series" />
+                        <input type="number" class="reps" id="reps" />
+                        <input type="number" class="weight" id="weight" />
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="addOrremove">
+                    <button>+</button>
+                    <button>-</button>
+                </div>
+                <button>Dodaj</button>
+            </div>
+        </div>
+        <footer>
+            <h5>Kontakt</h5>
+            <p>Telefon: +48 123 456 789</p>
+            <p>e-mail: kontakt@gmail.com</p>
+        </footer>
+    </body>
 </html>
