@@ -3,3 +3,64 @@
     --white: #FFFFFF;
     --secondGreen: #94B0B3;
 }
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--white);
+}
+
+.title {
+    text-align: center;
+    font-size: 5rem;
+    color: var(--maingreen);
+    font-weight: 300;
+    text-shadow: 1px 1px 2px var(--maingreen);
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    border: 1px solid var(--maingreen);
+    box-sizing: border-box;
+}
+
+.container,
+.container .workoutType {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 7rem auto;
+    width: 90vw;
+    border: 4px solid #324B4D;
+    gap: 1rem;
+}
+
+.container input,
+.container select {
+    border-radius: 25px;
+    border: 1px solid var(--maingreen);
+    text-align: center;
+}
+
+.container .workoutType {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.container .col {
+    display: flex;
+}

@@ -4,6 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+            rel="stylesheet" />
         <link rel="stylesheet" href="style/reset.css" />
         <link rel="stylesheet" href="style/style.css" />
         <script src="scripts/script.js" defer></script>
@@ -31,37 +36,45 @@
                 </div>
             </div>
             <div class="workout">
-                <div class="titlesOfCols">
-                    <div class="col1">
+                <div class="workoutCols">
+                    <div class="col">
                         <p>Nazwa ćwiczenia</p>
                         <p>Ilość serii</p>
                         <p>Ilość powtórzeń</p>
                         <p>obciążenie</p>
                     </div>
-                    <div class="col2">
+                    <div class="col">
                         <input type="text" class="name" id="name" />
                         <input type="number" class="series" id="series" />
                         <input type="number" class="reps" id="reps" />
                         <input type="number" class="weight" id="weight" />
                     </div>
-                    <div class="col3">
+                    <div class="col">
                         <input type="text" class="name" id="name" />
                         <input type="number" class="series" id="series" />
                         <input type="number" class="reps" id="reps" />
                         <input type="number" class="weight" id="weight" />
                     </div>
-                    <div class="col4">
+                    <div class="col">
                         <input type="text" class="name" id="name" />
                         <input type="number" class="series" id="series" />
                         <input type="number" class="reps" id="reps" />
                         <input type="number" class="weight" id="weight" />
                     </div>
-                    <div class="col5">
+                    <div class="col">
                         <input type="text" class="name" id="name" />
                         <input type="number" class="series" id="series" />
                         <input type="number" class="reps" id="reps" />
                         <input type="number" class="weight" id="weight" />
                     </div>
+                    <template>
+                        <div class="col">
+                            <input type="text" class="name" id="name" />
+                            <input type="number" class="series" id="series" />
+                            <input type="number" class="reps" id="reps" />
+                            <input type="number" class="weight" id="weight" />
+                        </div>
+                    </template>
                 </div>
             </div>
             <div class="buttons">
