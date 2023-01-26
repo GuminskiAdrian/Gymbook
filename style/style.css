@@ -53,6 +53,7 @@ body {
     border: 4px solid #324b4d;
     gap: 1rem;
     padding: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .container input,
@@ -124,13 +125,13 @@ body {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     width: 100vw;
     height: 8rem;
     border: 1px solid #324b4d;
     background-color: var(--maingreen);
     color: var(--secondGreen);
-    bottom: 0;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
