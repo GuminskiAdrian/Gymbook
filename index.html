@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="workout">
-                <div class="workoutCols">
+                <div class="workoutCols" id="workoutContainer">
                     <div class="col">
                         <p class="name">Nazwa ćwiczenia</p>
                         <p class="series">Ilość serii</p>
@@ -67,7 +67,7 @@
                         <input type="number" class="reps" id="reps" />
                         <input type="number" class="weight" id="weight" />
                     </div>
-                    <template>
+                    <template id="template">
                         <div class="col">
                             <input type="text" class="name" id="name" />
                             <input type="number" class="series" id="series" />
@@ -79,14 +79,14 @@
             </div>
             <div class="buttonsContainer">
                 <div class="addOrremove">
-                    <button class="buttons">+</button>
-                    <button class="buttons">-</button>
+                    <button class="buttons" id="addButton">+</button>
+                    <button class="buttons" id="removeButton">-</button>
                 </div>
-                <button class="submit">Dodaj</button>
+                <button class="submit" id="submit">Dodaj</button>
             </div>
         </div>
         <footer>
-            <h5>Kontakt: </h5>
+            <h5>Kontakt:</h5>
             <div class="info">
                 <p>Telefon: +48 123 456 789</p>
                 <p>e-mail: kontakt@gmail.com</p>

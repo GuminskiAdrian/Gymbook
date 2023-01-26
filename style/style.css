@@ -7,6 +7,10 @@
 body {
     font-family: "Roboto Mono", monospace;
     background-color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .title {
@@ -125,8 +129,8 @@ body {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     width: 100vw;
     height: 8rem;
     border: 1px solid #324b4d;
