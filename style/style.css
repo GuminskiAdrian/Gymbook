@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    overflow-x: hidden;
 }
 
 .title {
@@ -34,8 +34,7 @@ body {
 }
 
 .container,
-.workoutType,
-.workoutCols {
+.workoutType {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,18 +45,17 @@ body {
 .container,
 .container input,
 .container select {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: var(--maingreen);
 }
 
 .container {
     box-sizing: border-box;
     margin: 7rem auto;
-    width: 90vw;
+    width: 80vw;
     border: 4px solid #324b4d;
     gap: 1rem;
-    padding: 0.5rem;
-    font-size: 1.2rem;
+    padding: 1rem;
 }
 
 .container input,
@@ -67,45 +65,24 @@ body {
     text-align: center;
 }
 
-.workoutType {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .workout {
-    width: 65%;
-}
-
-.workoutCols,
-.workoutCols .col {
-    width: 100%;
-}
-
-.col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+    width: 90%;
     text-align: center;
-}
+    box-sizing: border-box;
 
-.name {
-    width: 40%;
-}
-
-.series,
-.reps,
-.weight {
-    width: 15%;
+    display: grid;
+    grid-template-columns: 50% 15% 15% 15%;
+    grid-gap: 1rem;
+    padding: 0.75rem;
 }
 
 .buttonsContainer {
+    box-sizing: border-box;
+    padding-inline: 2.7rem;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 58%;
 }
 
 .buttons,
@@ -126,11 +103,11 @@ body {
     background-color: var(--secondGreen);
     color: var(--maingreen);
     border-radius: 2rem;
+    padding-inline: 0.7rem;
 }
 
 footer {
-    /* position: fixed;
-    bottom: 0; */
+    margin-top: auto;
     width: 100vw;
     height: 8rem;
     border: 1px solid #324b4d;
