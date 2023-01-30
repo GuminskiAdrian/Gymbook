@@ -69,20 +69,19 @@ body {
     width: 90%;
     text-align: center;
     box-sizing: border-box;
-
     display: grid;
-    grid-template-columns: 50% 15% 15% 15%;
+    grid-template-columns: 50% calc((50% / 3) - 1rem) calc((50% / 3) - 1rem) calc((50% / 3) - 1rem);
     grid-gap: 1rem;
     padding: 0.75rem;
 }
 
 .buttonsContainer {
     box-sizing: border-box;
-    padding-inline: 2.7rem;
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 0.75rem;
 }
 
 .buttons,
